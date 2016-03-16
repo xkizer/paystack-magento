@@ -41,7 +41,7 @@
         <active>1</active>
         <model>paystack_inline/paymentmethod</model>
         <order_status>pending</order_status>
-        <title>Credit Cards - Visa, Mastercard, Verve - International (powered by Paystack)</title>
+        <title>Debit/Credit Cards (powered by Paystack)</title>
         <allowspecific>0</allowspecific>
         <test_mode>1</test_mode>
         <secret_key_test>sk_test_xxxx</secret_key_test>
