@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Paystack_Inline>
+      <active>true</active>
+      <codePool>community</codePool>
+       
+      <depends>
+        <Mage_Payment />
+      </depends>
+    </Paystack_Inline>
+  </modules>
+</config>

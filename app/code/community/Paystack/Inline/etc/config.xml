@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Paystack_Inline>
+      <version>1.0.0.0</version>
+    </Paystack_Inline>
+  </modules>
+ 
+  <global>
+
+    <helpers>
+      <paystack_inline>
+        <class>Paystack_Inline_Helper</class>
+      </paystack_inline>
+    </helpers>
+ 
+    <blocks>
+      <paystack_inline>
+        <class>Paystack_Inline_Block</class>
+      </paystack_inline>
+    </blocks>
+         
+    <models>
+      <paystack_inline>
+        <class>Paystack_Inline_Model</class>
+      </paystack_inline>
+    </models>
+ 
+    <resources>
+      <paystack_inline_setup>
+        <setup>
+          <module>Paystack_Inline</module>
+        </setup>
+      </paystack_inline_setup>
+    </resources>
+  </global>
+ 
+  <default>
+    <payment>
+      <paystack_inline>
+        <active>1</active>
+        <model>paystack_inline/paymentmethod</model>
+        <order_status>pending</order_status>
+        <title>Credit Cards - Visa, Mastercard, Verve - International (powered by Paystack)</title>
+        <allowspecific>0</allowspecific>
+        <test_mode>1</test_mode>
+        <secret_key_test>sk_test_xxxx</secret_key_test>
+        <public_key_test>pk_test_xxxx</public_key_test>
+        <secret_key_live>sk_live_xxxx</secret_key_live>
+        <public_key_live>pk_live_xxxx</public_key_live>
+        <payment_action>sale</payment_action>
+      </paystack_inline>
+    </payment>
+  </default>
+   
+  <frontend>
+    <routers>
+      <paystack>
+        <use>standard</use>
+        <args>
+          <module>Paystack_Inline</module>
+          <frontName>paystack</frontName>
+        </args>
+      </paystack>
+    </routers>
+  </frontend>
+</config>
