@@ -42,7 +42,7 @@ if($params):
         function payWithPaystack(){
             var handler = PaystackPop.setup({
         <?php foreach ($params as $name => $value): ?>
-            <?php echo $name; ?>: '<?php echo str_replace("'","\\'",$value); ?>',
+            <?php echo $name; ?>: '<?php echo str_replace(array("'","\n"),array("\\'"," "),$value); ?>',
         <?php endforeach; ?>
                 ref: '<?php echo $params["orderId"]; ?>' + generateREF(),
                 callback: function(response){
