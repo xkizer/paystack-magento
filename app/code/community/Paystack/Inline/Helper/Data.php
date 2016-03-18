@@ -1,4 +1,16 @@
 <?php
+/**
+ * Paytsack Inline Extension
+ *
+ * DISCLAIMER
+ * This file will not be supported if it is modified.
+ *
+ * @category   Paystack
+ * @author     Ibrahim Lawal (@ibrahimlawal)
+ * @package    Paystack_Inline
+ * @copyright  Copyright (c) 2016 Paystack. (https://www.paystack.com/)
+ * @license    https://raw.githubusercontent.com/PaystackHQ/paystack-magento/master/LICENSE   MIT License (MIT)
+ */
 class Paystack_Inline_Helper_Data extends Mage_Core_Helper_Abstract
 {
     const XML_PATH_TEST_MODE        = 'payment/paystack_inline/test_mode';
