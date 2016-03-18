@@ -5,6 +5,7 @@
       <groups>
         <paystack_inline translate="label" module="paystack_inline">
           <label>Paystack Inline Module</label>
+          <comment><![CDATA[<a href="https://dashboard.paystack.co/#/signup" target="_blank">Click here to sign up for a Paystack Account.</a>]]></comment>
           <sort_order>1</sort_order>
           <show_in_default>1</show_in_default>
           <show_in_website>1</show_in_website>
@@ -29,6 +30,7 @@
             </active>
             <test_mode translate="label">
               <label>Test Mode</label>
+              <comment>While in test mode, you do not receive payments and can only use our <![CDATA[<a href="https://developers.paystack.co/docs/test-cards" target="_blank">Test Cards</a>]]></comment>
               <frontend_type>select</frontend_type>
               <source_model>adminhtml/system_config_source_yesno</source_model>
               <show_in_default>1</show_in_default>
@@ -47,7 +49,7 @@
             </order_status>
             <secret_key_test translate="label,comment">
                 <label>Secret Key (Test)</label>
-                <comment>Check the Paystack Dashboard for yours.</comment>
+                <comment>Check the <![CDATA[<a href="https://dashboard.paystack.co/#/settings/developer" target="_blank">Paystack Dashboard</a>]]> for yours.</comment>
                 <frontend_type>text</frontend_type>
                 <sort_order>1</sort_order>
                 <show_in_default>1</show_in_default>
@@ -57,7 +59,7 @@
             </secret_key_test>
             <public_key_test translate="label,comment">
                 <label>Public Key (Test)</label>
-                <comment>Check the Paystack Dashboard for yours.</comment>
+                <comment>Check the <![CDATA[<a href="https://dashboard.paystack.co/#/settings/developer" target="_blank">Paystack Dashboard</a>]]> for yours.</comment>
                 <frontend_type>text</frontend_type>
                 <sort_order>2</sort_order>
                 <show_in_default>1</show_in_default>
@@ -67,7 +69,7 @@
             </public_key_test>
             <secret_key_live translate="label,comment">
                 <label>Secret Key (Live)</label>
-                <comment>Check the Paystack Dashboard for yours.</comment>
+                <comment>Check the <![CDATA[<a href="https://dashboard.paystack.co/#/settings/developer" target="_blank">Paystack Dashboard</a>]]> for yours.</comment>
                 <frontend_type>text</frontend_type>
                 <sort_order>1</sort_order>
                 <show_in_default>1</show_in_default>
@@ -77,7 +79,7 @@
             </secret_key_live>
             <public_key_live translate="label,comment">
                 <label>Public Key (Live)</label>
-                <comment>Check the Paystack Dashboard for yours.</comment>
+                <comment>Check the <![CDATA[<a href="https://dashboard.paystack.co/#/settings/developer" target="_blank">Paystack Dashboard</a>]]> for yours. Note that this is not available until you have completed the <![CDATA[<a href="https://dashboard.paystack.co/#/settings/request-go-live" target="_blank">Go-live</a>]]>.</comment>
                 <frontend_type>text</frontend_type>
                 <sort_order>2</sort_order>
                 <show_in_default>1</show_in_default>
