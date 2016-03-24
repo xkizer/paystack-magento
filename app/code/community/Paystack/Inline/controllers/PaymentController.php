@@ -78,7 +78,6 @@ class Paystack_Inline_PaymentController extends Mage_Core_Controller_Front_Actio
             $order->save();
 
             Mage::getSingleton('checkout/session')->unsQuoteId();
-            Mage_Core_Controller_Varien_Action::_redirect('checkout/onepage/success');
         }
     
         
