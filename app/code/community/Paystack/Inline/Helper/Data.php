@@ -22,17 +22,17 @@ class Paystack_Inline_Helper_Data extends Mage_Core_Helper_Abstract
 
     function getPublicKey(){
         if(Mage::getStoreConfig(Paystack_Inline_Helper_Data::XML_PATH_TEST_MODE)){
-            return Mage::getStoreConfig(Paystack_Inline_Helper_Data::XML_PATH_PUBLIC_KEY_TEST);
+            return trim(Mage::getStoreConfig(Paystack_Inline_Helper_Data::XML_PATH_PUBLIC_KEY_TEST));
         } else{
-            return Mage::getStoreConfig(Paystack_Inline_Helper_Data::XML_PATH_PUBLIC_KEY_LIVE);
+            return trim(Mage::getStoreConfig(Paystack_Inline_Helper_Data::XML_PATH_PUBLIC_KEY_LIVE));
         }
     }
     
     function getSecretKey(){
         if(Mage::getStoreConfig(Paystack_Inline_Helper_Data::XML_PATH_TEST_MODE)){
-            return Mage::getStoreConfig(Paystack_Inline_Helper_Data::XML_PATH_SECRET_KEY_TEST);
+            return trim(Mage::getStoreConfig(Paystack_Inline_Helper_Data::XML_PATH_SECRET_KEY_TEST));
         } else{
-            return Mage::getStoreConfig(Paystack_Inline_Helper_Data::XML_PATH_SECRET_KEY_LIVE);
+            return trim(Mage::getStoreConfig(Paystack_Inline_Helper_Data::XML_PATH_SECRET_KEY_LIVE));
         }
     }
     
