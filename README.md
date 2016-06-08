@@ -17,10 +17,10 @@ requirements,refer to the Magento website:[Magento Requirements][link-magento-re
 ## Prepare
 
 - Before you can start taking payments through Paystack, you will first need to sign up at: 
-[link-signup][link-signup]. To receive live payments, you should request a Go-live after
+[https://dashboard.paystack.co/#/signup][link-signup]. To receive live payments, you should request a Go-live after
 you are done with configuration and have successfully made a test payment.
-- Either: Download a release version from the [releases page][link-releases]
-- OR: Locate this plugin on [Magento Connect][link-magento-connect] and copy the extension key.
+- Either: Download a released `.tgz` file from the [releases page][link-releases]
+- OR: ~Locate this plugin on [Magento Connect][link-magento-connect] and copy the extension key.~ Pending Approval.
 
 ## Install
 
