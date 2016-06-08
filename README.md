@@ -20,7 +20,7 @@ requirements,refer to the Magento website:[Magento Requirements][link-magento-re
 [https://dashboard.paystack.co/#/signup][link-signup]. To receive live payments, you should request a Go-live after
 you are done with configuration and have successfully made a test payment.
 - Either: Download a released `.tgz` file from the [releases page][link-releases]
-- OR: ~Locate this plugin on [Magento Connect][link-magento-connect] and copy the extension key.~ Pending Approval.
+- OR: <del>Locate this plugin on [Magento Connect][link-magento-connect] and copy the extension key.</del> Pending Approval.
 
 ## Install
 
