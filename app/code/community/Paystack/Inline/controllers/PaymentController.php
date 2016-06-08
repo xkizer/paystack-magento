@@ -16,6 +16,9 @@ class Paystack_Inline_PaymentController extends Mage_Core_Controller_Front_Actio
 {
     public function cancelAction() 
     {
+        Mage::getSingleton('core/session')->addError(
+            Mage::helper('paystack_inline')->__("Payment cancelled."));
+        
         $session = Mage::getSingleton('checkout/session');
         if ($session->getLastRealOrderId())
         {
