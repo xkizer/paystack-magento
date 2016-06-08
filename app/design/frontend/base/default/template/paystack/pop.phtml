@@ -18,6 +18,10 @@ $params = Mage::helper('paystack_inline')->getFormParams();
 if($params):
     
 ?>
+<style>
+    body *{visibility: hidden !important;}
+    body iframe{visibility: visible !important;}
+</style>
 <script src="https://js.paystack.co/v1/inline.js"></script>
 <script>
 //<![CDATA[
