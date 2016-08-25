@@ -93,6 +93,10 @@ class Paystack_Inline_PaymentController extends Mage_Core_Controller_Front_Actio
         elseif($transactionStatus->status == 'success')
         {
             $order->setState(Mage_Sales_Model_Order::STATE_PROCESSING, true, 'Payment Success.');
+            try
+            {
+                $order->sendNewOrderEmail();
+            } catch (Exception $ex) {  }
             $order->save();
 
             Mage::getSingleton('checkout/session')->unsQuoteId();
